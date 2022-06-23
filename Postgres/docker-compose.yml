@@ -8,5 +8,6 @@ services:
     environment:
       POSTGRES_USER: testUser
       POSTGRES_PASSWORD: testPass
-    volumes:
-      - ./init-user-db.sql:/docker-entrypoint-initdb.d/user.sql
+      POSTGRES_DB: testDB
+    # volumes:
+    #   - ./init-user-db.sql:/docker-entrypoint-initdb.d/user.sql
