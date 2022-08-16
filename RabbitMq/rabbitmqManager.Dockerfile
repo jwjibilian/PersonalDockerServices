@@ -7,7 +7,7 @@ ENV RABBITMQ_CONFIG_FILE $RABBITMQ_HOME/etc/rabbitmq/rabbitmq.conf
 
 COPY rabbitmq.conf $RABBITMQ_HOME/etc/rabbitmq/rabbitmq.conf
 
-ADD init.sh /init.sh
+ADD init.sh /init.sh 
 RUN chmod +x /init.sh
 EXPOSE 15672
 
